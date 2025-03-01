@@ -4187,7 +4187,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					4CE6DEE227F7A08100C66700 = {
 						CreatedOnToolsVersion = 13.3;
@@ -6327,7 +6327,6 @@
 		4CE6DF0827F7A08200C66700 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -6335,13 +6334,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"damus/Preview Content\"";
-				DEVELOPMENT_TEAM = XK7H4JAB3D;
+				DEVELOPMENT_TEAM = DLARK8WTF9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = damus/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Damus;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
-				INFOPLIST_KEY_NSCameraUsageDescription = "Damus needs access to your camera if you want to scan QR codes and upload photos from it";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Damus needs access to your media library for playback statuses";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Damus needs access to your camera in order to upload photos and scan QR codes.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Local authentication to access private key";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Damus needs access to your microphone to allow you to create video recordings that you can choose to post publicly on the network";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Granting Damus access to your photos allows you to save images.";
@@ -6361,7 +6361,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MARKETING_VERSION = 1.13;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jb55.damus2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ss.damus2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
@@ -6379,7 +6379,6 @@
 		4CE6DF0927F7A08200C66700 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -6387,13 +6386,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"damus/Preview Content\"";
-				DEVELOPMENT_TEAM = XK7H4JAB3D;
+				DEVELOPMENT_TEAM = DLARK8WTF9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = damus/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Damus;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
-				INFOPLIST_KEY_NSCameraUsageDescription = "Damus needs access to your camera if you want to scan QR codes and upload photos from it";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Damus needs access to your media library for playback statuses";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Damus needs access to your camera in order to upload photos and scan QR codes.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Local authentication to access private key";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Damus needs access to your microphone to allow you to create video recordings that you can choose to post publicly on the network";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Granting Damus access to your photos allows you to save images.";
@@ -6413,7 +6413,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MARKETING_VERSION = 1.13;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jb55.damus2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ss.damus2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
@@ -6429,13 +6429,12 @@
 		4CE6DF0B27F7A08200C66700 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XK7H4JAB3D;
+				DEVELOPMENT_TEAM = DLARK8WTF9;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jb55.damusTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ss.damusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -6447,13 +6446,12 @@
 		4CE6DF0C27F7A08200C66700 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XK7H4JAB3D;
+				DEVELOPMENT_TEAM = DLARK8WTF9;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jb55.damusTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ss.damusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -6465,11 +6463,10 @@
 		4CE6DF0E27F7A08200C66700 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XK7H4JAB3D;
+				DEVELOPMENT_TEAM = DLARK8WTF9;
 				GENERATE_INFOPLIST_FILE = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jb55.damusUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ss.damusUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -6481,11 +6478,10 @@
 		4CE6DF0F27F7A08200C66700 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XK7H4JAB3D;
+				DEVELOPMENT_TEAM = DLARK8WTF9;
 				GENERATE_INFOPLIST_FILE = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jb55.damusUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ss.damusUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -6501,7 +6497,7 @@
 				CODE_SIGN_ENTITLEMENTS = "share extension/share extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XK7H4JAB3D;
+				DEVELOPMENT_TEAM = DLARK8WTF9;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -6520,7 +6516,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.13;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jb55.damus2.share-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ss.damus2.share-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -6539,7 +6535,7 @@
 				CODE_SIGN_ENTITLEMENTS = "share extension/share extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XK7H4JAB3D;
+				DEVELOPMENT_TEAM = DLARK8WTF9;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -6554,7 +6550,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.13;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jb55.damus2.share-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ss.damus2.share-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -6573,7 +6569,7 @@
 				CODE_SIGN_ENTITLEMENTS = "highlighter action extension/highlighter action extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XK7H4JAB3D;
+				DEVELOPMENT_TEAM = DLARK8WTF9;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -6588,7 +6584,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.13;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jb55.damus2.highlighter-action-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ss.damus2.highlighter-action-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -6608,7 +6604,7 @@
 				CODE_SIGN_ENTITLEMENTS = "highlighter action extension/highlighter action extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XK7H4JAB3D;
+				DEVELOPMENT_TEAM = DLARK8WTF9;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -6623,7 +6619,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.13;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jb55.damus2.highlighter-action-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ss.damus2.highlighter-action-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -6642,7 +6638,7 @@
 				CODE_SIGN_ENTITLEMENTS = DamusNotificationService/DamusNotificationService.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XK7H4JAB3D;
+				DEVELOPMENT_TEAM = DLARK8WTF9;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -6657,7 +6653,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.13;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jb55.damus2.DamusNotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ss.damus2.DamusNotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -6677,7 +6673,7 @@
 				CODE_SIGN_ENTITLEMENTS = DamusNotificationService/DamusNotificationService.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XK7H4JAB3D;
+				DEVELOPMENT_TEAM = DLARK8WTF9;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -6692,7 +6688,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.13;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jb55.damus2.DamusNotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ss.damus2.DamusNotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
