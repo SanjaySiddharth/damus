@@ -188,7 +188,8 @@ fileprivate struct QRCameraView<Content: View>: View {
     var bottomContent: () -> Content
     var dismiss: DismissAction
     
-    
+    @State private var scannedString: String = "Scan a QR Code"
+
     // MARK: State properties
     
     /// The main state of this view.
@@ -271,7 +272,10 @@ fileprivate struct QRCameraView<Content: View>: View {
             
             Spacer()
             
-            CodeScannerView(codeTypes: [.qr], scanMode: .continuous, scanInterval: 1, showViewfinder: true, simulatedData: "npub1k92qsr95jcumkpu6dffurkvwwycwa2euvx4fthv78ru7gqqz0nrs2ngfwd", shouldVibrateOnSuccess: false) { result in
+//            CodeScannerView(codeTypes: [.qr], scanMode: .continuous, scanInterval: 1, showViewfinder: true, simulatedData: "npub1k92qsr95jcumkpu6dffurkvwwycwa2euvx4fthv78ru7gqqz0nrs2ngfwd", shouldVibrateOnSuccess: false) { result in
+//                self.handleNewProfileScanInfo(result)
+//            }
+            QRScannerView(){ result in
                 self.handleNewProfileScanInfo(result)
             }
             .scaledToFit()
@@ -350,7 +354,7 @@ fileprivate struct QRCameraView<Content: View>: View {
     ///
     /// Behavior depends on the current state. In some states we completely ignore new scanner info (e.g. when looking at a profile)
     /// This function mutates our state
-    func handleNewProfileScanInfo(_ scanInfo: Result<ScanResult, ScanError>) {
+    func handleNewProfileScanInfo(_ scanInfo: Result<NewScanResult, NewScanError>) {
         switch scannerState {
             case .scanning, .incompatibleQRCodeFound:
                 withAnimation {
@@ -362,7 +366,7 @@ fileprivate struct QRCameraView<Content: View>: View {
     }
     
     /// Processes a QR code scan, and computes the next state to be applied to the view
-    func processScanAndComputeNextState(_ scanInfo: Result<ScanResult, ScanError>) -> ScannerState {
+    func processScanAndComputeNextState(_ scanInfo: Result<NewScanResult, NewScanError>) -> ScannerState {
         switch scanInfo {
             case .success(let successfulScan):
                 guard let result = ProfileScanResult(string: successfulScan.string) else {
@@ -397,7 +401,7 @@ fileprivate struct QRCameraView<Content: View>: View {
     /// 1. This is identifiable because it that is needed for the error sheet view
     /// 2. Currently there is only one error type (`ScanError`), but this is still used to allow us to customize it and add future error types outside the scanner.
     enum ScannerError: Error, Identifiable {
-        case scanError(ScanError)
+        case scanError(NewScanError)
         
         var localizedDescription: String {
             switch self {
